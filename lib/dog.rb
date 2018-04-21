@@ -8,7 +8,8 @@ def initialize(name)
   @@all << self
 end
 
-def self.all? { |e| puts "#{name}"   }
+def self.all?
+  @@all each {|dog| puts "#{dog.name}"}
 end
 
 def self.clear_all
